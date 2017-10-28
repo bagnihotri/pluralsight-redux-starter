@@ -1,16 +1,11 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 export class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
         <p>Header Here</p>
-        {this.props.children}
       </div>
     );
   }
 }
-
-App.propTypes = {
-  children: PropTypes.object.isRequired
-};
